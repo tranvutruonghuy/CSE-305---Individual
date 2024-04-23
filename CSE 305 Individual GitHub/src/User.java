@@ -4,7 +4,7 @@ public class User {
     private String email;
     private String userType;
 
-    public User(String userID, String password, String email, String userType) {
+    public void createUser(String userID, String password, String email, String userType) {
         this.userID = userID;
         this.password = password;
         this.email = email;
@@ -43,8 +43,6 @@ public class User {
         this.userType = userType;
     }
 
-    public void createUser() {
-        user(userID, password, email, userType);
-    }
+    
 
 }
